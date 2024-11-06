@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/logo1.png" alt="EcoMarket" class="header-image">
+            <div class="search-container">
+                <input type="text" id="sectionName" placeholder="Ingresa id" />
+                <button onclick="scrollToSection()">Buscar</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+            <div class="menu-links">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="contactenos.html">Contáctenos</a>
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="iniciar.html">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-icon').classList.toggle('active');
+            document.querySelector('.menu-links').classList.toggle('active');
+        }
+    </script>
+    
+    <section id="rotonda">
+        <img src="img/imagen0.jpeg" alt="Imagen de EcoMarket" class="active">
+        <img src="img/imagen1.jpeg" alt="Imagen de EcoMarket">
+        <img src="img/imagen2.jpg" alt="Imagen de EcoMarket">
+        <img src="img/imagen3.jpeg" alt="Imagen de EcoMarket">
+    </section>
+
+    <section id="oferta">
+        <h1>Bienvenido a EcoMarket</h1>
+        <div class="oferta-content">
+            <img src="img/oferta.jpg" alt="Imagen de oferta de EcoMarket" class="oferta-image">
+            <div class="oferta-details">
+                <h2>Ofertas Exclusivas para Nuestros Clientes</h2>
+                <p>
+                    En EcoMarket, nos esforzamos por brindar productos de alta calidad que se adapten a sus necesidades y a su estilo de vida. Estamos comprometidos con la sostenibilidad y con ofrecer precios accesibles para todos. Encuentre productos frescos y saludables, y aproveche nuestras ofertas semanales que incluyen una gran variedad de artículos para el hogar, alimentos orgánicos, productos de limpieza ecológicos y mucho más.<br><br>
+                    EcoMarket es su aliado en un estilo de vida consciente y sostenible. Al comprar con nosotros, no solo ahorra, sino que también apoya prácticas responsables y una comunidad saludable. Nos dedicamos a ofrecer una experiencia de compra amigable con el ambiente, acercando a nuestros clientes opciones naturales, locales y a precios competitivos.<br><br>
+                    <strong>¡Visite nuestro sitio y no se pierda las promociones del mes!</strong>
+                </p>
+                <div class="button-container">
+                    <a href="ofertas.html" class="button">VER OFERTAS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+    <script src="buscador.js"></script>
+</body>
+</html>

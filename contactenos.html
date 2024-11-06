@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="img/logo1.png" alt="EcoMarket" class="header-image">
+            <div class="search-container">
+                <input type="text" id="sectionName" placeholder="Ingresa id" />
+                <button onclick="scrollToSection()">Buscar</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+            <div class="menu-links">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="contactenos.html">Contáctenos</a>
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="iniciar.html">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="contactenos">
+        <h2>Contáctenos</h2>
+        <div class="form-container">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="buscador.js"></script>
+    
+
+</body>
+</html>

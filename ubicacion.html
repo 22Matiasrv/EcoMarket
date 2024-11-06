@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="img/logo1.png" alt="EcoMarket" class="header-image">
+            <div class="search-container">
+                <input type="text" id="sectionName" placeholder="Ingresa id" />
+                <button onclick="scrollToSection()">Buscar</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+            <div class="menu-links">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="contactenos.html">Contáctenos</a>
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="iniciar.html">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+    
+        <section id="ubicacion">
+            <h2>¡Visítenos en EcoMarket!</h2>
+            <div class="ubicacion-container">
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13171.798444905791!2d-77.27322963793694!3d-11.567109295006254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2spe!4v1730414887384!5m2!1ses!2spe"  width="460" height="600"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="texto">
+                    <h2>Ubicación y Acceso</h2>
+                    <p>
+                        En el corazón de la ciudad, EcoMarket se enorgullece de estar convenientemente situado para ofrecer a nuestros clientes un acceso fácil y práctico a una variedad de productos ecológicos y sostenibles. Nuestra ubicación estratégica permite que cualquier persona, ya sea un residente local, un trabajador en la zona o un visitante, pueda acercarse sin complicaciones. Creemos que la conveniencia es fundamental para fomentar un estilo de vida saludable, y estamos aquí para hacer que la elección de productos frescos y ecológicos sea una experiencia accesible para todos.<br>
+                        <strong>Productos Frescos y Ecológicos</strong><br><br>
+                        En EcoMarket, entendemos la importancia de llevar un estilo de vida saludable y sostenible. Por ello, ofrecemos una amplia gama de productos que cumplen con los más altos estándares de calidad y sostenibilidad. Desde frutas y verduras frescas cultivadas sin pesticidas hasta snacks saludables y bebidas refrescantes, cada producto ha sido seleccionado cuidadosamente para garantizar que nuestros clientes puedan disfrutar de lo mejor de la naturaleza. <br>
+                        Nos comprometemos a apoyar a los agricultores locales y a las prácticas sostenibles, lo que significa que al elegir EcoMarket, no solo estás eligiendo lo mejor para tu salud, sino también apoyando a tu comunidad y al medio ambiente. Ven y descubre cómo puedes integrar opciones ecológicas en tu día a día, mientras disfrutas de la comodidad de nuestra ubicación céntrica. <br>
+                        <strong>¡Te esperamos con los brazos abiertos!</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2024 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="buscador.js"></script>
+</body>
+</html>

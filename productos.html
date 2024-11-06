@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/logo1.png" alt="EcoMarket" class="header-image">
+            <div class="search-container">
+                <input type="text" id="sectionName" placeholder="Ingresa id" />
+                <button onclick="scrollToSection()">Buscar</button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+            <div class="menu-links">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="contactenos.html">Contáctenos</a>
+                <a href="ubicacion.html">Ubicación</a>
+                <a href="iniciar.html">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div id="bebidas">
+            <h2>BEBIDAS</h2>
+            <div class="paquete-container">
+                <div class="paquete">
+                    <img src="img/productos1.png" alt="Producto 1">
+                    <h3>JUST ICE TEA - Té Verde</h3>
+                    <p>Disfruta de la frescura y propiedades revitalizantes del té verde en esta bebida helada. Perfecto para refrescarte de manera saludable.</p>
+                    <p><strong>Precio:</strong> 8$</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/productos2.png" alt="Producto 2">
+                    <h3>JUST ICE TEA - Té de Hierbas de Hibisco y Bayas</h3>
+                    <p>Esta bebida combina el sabor floral del hibisco con un toque de bayas, brindando una experiencia refrescante y llena de antioxidantes.</p>
+                    <p><strong>Precio:</strong> 8$</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/productos3.png" alt="Producto 3">
+                    <h3>JUST ICE TEA - Té Oolong de Durazno</h3>
+                    <p>Un té oolong de sabor suave y afrutado, con un toque de durazno, ideal para quienes buscan un té helado con un matiz dulce y refrescante.</p>
+                    <p><strong>Precio:</strong> 8$</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="Snacks">
+            <h2>SNACKS</h2>
+            <div class="paquete-container">
+                <div class="paquete">
+                    <img src="img/productos4.png" alt="Producto 4">
+                    <h3>Karay - Sabor Banana</h3>
+                    <p>Un snack saludable y crujiente con sabor a banana, perfecto para una merienda rápida y llena de energía.</p>
+                    <p><strong>Precio:</strong> 5$</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/productos5.png" alt="Producto 5">
+                    <h3>Karay - Sabor Coco</h3>
+                    <p>Este snack a base de coco te ofrece un sabor tropical, ideal para disfrutar en cualquier momento del día.</p>
+                    <p><strong>Precio:</strong> 5$</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/productos6.png" alt="Producto 6">
+                    <h3>Karay - Sabor Manzana</h3>
+                    <p>Con sabor a manzana, este snack es una opción deliciosa y natural, perfecta para saciar antojos de manera saludable.</p>
+                    <p><strong>Precio:</strong> 5$</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="cosméticos">
+            <h2>COSMÉTICOS</h2>
+            <div class="paquete-container">
+                <div class="paquete">
+                    <img src="img/productos7.png" alt="Producto 4">
+                    <h3>Acondicionador</h3>
+                    <p>Con una fórmula suave y nutritiva, este acondicionador deja el cabello sedoso, fácil de peinar y lleno de brillo.</p>
+                    <p><strong>Precio:</strong> 15$</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/productos8.png" alt="Producto 5">
+                    <h3>Shampoo</h3>
+                    <p>Un producto elaborado con ingredientes naturales, ideal para el cuidado y limpieza profunda del cabello. Proporciona frescura y vitalidad al cabello.</p>
+                    <p><strong>Precio:</strong> 15$</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="paquete">
+                    <img src="img/productos9.png" alt="Producto 6">
+                    <h3>Jabón</h3>
+                    <p>Un jabón elaborado con componentes naturales para una limpieza suave y efectiva, ideal para todo tipo de piel.</p>
+                    <p><strong>Precio:</strong> 12$</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="buscador.js"></script>
+</body>
+</html>

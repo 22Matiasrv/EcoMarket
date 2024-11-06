@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 80px;
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#rotonda {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#rotonda img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#rotonda img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-image {
+    height: 100px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section#oferta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section#oferta h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/*OFERTA*/
+
+.oferta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.oferta-image {
+    width: 50%;
+    height: auto;
+}
+
+.oferta-details {
+    width: 50%;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-container .button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    height: 50px;
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* PRODUCTOS */
+
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.paquete-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.paquete {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #decccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.paquete img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.paquete h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.paquete p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* CONCTACTENOS */
+
+#contactenos {
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+form button {
+    width: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* UBICACION */
+
+#ubicacion {
+    padding: 20px;
+}
+
+#ubicacion h2 {
+    text-align: center;
+}
+
+.ubicacion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mapa {
+    flex: 1;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.texto {
+    flex: 1;
+    text-align: left;
+}
+
+/* INICIAR */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* OFERTAS */
+
+.paquetes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.oferta1, .oferta2, .oferta3 {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.oferta1 img, .oferta2 img, .oferta3 img {
+    width: 100%;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    
+
+    .menu-icon {
+        display: block;
+        background-image: url('img/linias\ .png');
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        background-color: #4CAF50;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .menu-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+    .menu-icon.active + .menu-links {
+        display: flex;
+    }
+}
